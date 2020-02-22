@@ -52,5 +52,14 @@ Vamos enviar determinadas quantidades de bytes (caracteres) ate o programa crash
 
 ![connect](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/6-connect.png)
 
+Interessante que enviei apenas um (A) e o programa ja dava chash, no exemplo a seguir enviei (an4kein). 
+
+![crash_1](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/7-crash-1.png)
+
+Uma vez um colega meu falou, envia 5000k de bytes inicialmente..... Ahhh, entao vamos fazer isso!!! haha
+
+
+
+
 ### 2 - Controlando o EIP
 

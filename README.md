@@ -40,6 +40,10 @@ Abre seu Immunity Debugger em seguida abra o axp202001 e de play nele.
 
 ![open_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/3-openprog.png)
 
+Observe que ele encontra-se pausado, precisamos dar play.
+
+![play_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/4-play_prog.png)
+
 
 ### 2 - Controlando o EIP
 

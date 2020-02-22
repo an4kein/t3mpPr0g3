@@ -8,6 +8,8 @@ Download Immunity Debugger. : https://debugger.immunityinc.com/ID_register.py
 
 https://www.oracle.com/java/technologies/jdk-7-netbeans-downloads.html
 
+http://download.oracle.com/otn-pub/java/jdk-nb/7u80-8.0.2/jdk-7u80-nb-8_0_2-windows-i586.exe
+
 Dwonload Windows-Binaries: https://github.com/interference-security/kali-windows-binaries
 
 Download PyCharm for windows 7 32

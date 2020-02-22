@@ -44,6 +44,10 @@ Observe que ele encontra-se pausado, precisamos dar play.
 
 ![play_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/4-play_prog.png)
 
+Apos dar o play, uma janela eh aberta informando que esta tudo ok e podemos comecar a brincadeira.
+
+![executando](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/5-executando.png)
+
 
 ### 2 - Controlando o EIP
 

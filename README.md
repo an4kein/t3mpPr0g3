@@ -56,7 +56,9 @@ Interessante que enviei apenas um (A) e o programa ja dava chash, no exemplo a s
 
 ![crash_1](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/7-crash-1.png)
 
-Uma vez um colega meu falou, envia 5000k de bytes inicialmente..... Ahhh, entao vamos fazer isso!!! haha
+Uma vez um colega meu falou, envia 5000k de bytes inicialmente..... Ahhh, entao vamos fazer isso!!! haha.. Antes eu particulamente fazia o fuzzer, mas neste caso vou dar preferencia e seguir a dica do meu mano.
+
+
 
 
 

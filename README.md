@@ -26,3 +26,14 @@ tambem pode ser passado qualquer outra porta, isso fica a seu criterio...
 
 ![otherport](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/other_port.png)
 
+um outra maneira era fazer um fuzer de portas, ate encontrar a porta na qual ele abre.
+
+### 2 - Controlando o EIP
+
+Inicialmente enviei um (A) e o programa me retornava (COMPLETE), mandei outras informacoes de teste, sempre aumentando a quantidade de caracteres enviado.
+
+![interagindo](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/2-interagindo.png)
+
+Precisamos analisar melhor, nesse momento entrar o famoso (Immunity Debugger) atraves dele vamos debugar com mais detalhes, pois comecaremos agora o fuzzer, ate encontrar o momento em que o "PROGRAMA CRASHA"
+
+

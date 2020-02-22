@@ -48,6 +48,9 @@ Apos dar o play, uma janela eh aberta informando que esta tudo ok e podemos come
 
 ![executando](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/5-executando.png)
 
+Vamos enviar determinadas quantidades de bytes (caracteres) ate o programa crashar, observe que foi estabelecida a conecao.
+
+![connect](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/6-connect.png)
 
 ### 2 - Controlando o EIP
 

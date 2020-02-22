@@ -6,6 +6,8 @@ Download software: https://onedrive.live.com/?authkey=%21AOsBPm%2DgVunhDAg&cid=5
 
 Download Immunity Debugger. : https://debugger.immunityinc.com/ID_register.py
 
+https://www.oracle.com/java/technologies/jdk-7-netbeans-downloads.html
+
 Dwonload Windows-Binaries: https://github.com/interference-security/kali-windows-binaries
 
 Download PyCharm for windows 7 32

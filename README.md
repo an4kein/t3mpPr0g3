@@ -214,4 +214,7 @@ Precisamos representar o endereco em hexdecimal em nosso exploit, atualmente ele
 
 `412014C5  >>> \xC5\x14\x20\x41`
 
+Vamos adicionar um BreakPoint e ver se estamos alcancando o endereco no qual escolhemos:
+
+![breakpoint](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/18-breakpoint.png)
 

@@ -140,3 +140,9 @@ Agora precisamos encontrar espaco para nossa SHELLCODE, atualmente colocamos no 
 -- 154  <<<< ----- NOSSO EIP ERA DE 156, MAS SUBTRAIMOS 4 BYTES EQUIVALENTE NOSSOS B's SOBREESCREVENDO O EIP
 -- 4    <<<< ----- EQUIVALENTE OS B's
 ```
+
+Bom, veja que agora temos bastante espaco para nossa shellcode. 
+
+![space_shellcode](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/14-space_shellcode.png)
+
+Precisamos encontrar os BADCHARS, para nao ter problemas futuros em nossa shellcode.

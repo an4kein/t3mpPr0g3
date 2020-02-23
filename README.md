@@ -326,6 +326,8 @@ CODIGO OK! SHELLCODE OK!, EXPLOIT TA OK! EXECUTA LOGO E PEGA SHELL DE UMA VEZ!..
 
 ## EXPLOIT FUNCIONAL
 
+Download Exploit: https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/exploit.py
+
 ```
 import socket
 import struct

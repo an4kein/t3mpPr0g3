@@ -196,7 +196,9 @@ Se quiser aprender um pouco mais de como fazer manualmente, veja esse video: htt
 
 Badchars encontrados: \x00\x05\x06\x0a\x0d\x21\x22\x23\x24\xc5\xe3\xe4
 
-
 Depois de ter encontrado todos os badchars, eh hora de redirecionar o fluxo de execucao.
+
+Precisamos encontrar um endereco de retorno, um JMP ESP pois assim na hora da execucao vamos fazer o EIP apontar para nosso ESP onde esta localizado nossa SHELLCODE.
+
 
 

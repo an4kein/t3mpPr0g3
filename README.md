@@ -8,6 +8,15 @@ Download Immunity Debugger. : https://debugger.immunityinc.com/ID_register.py
 
 Dwonload Windows-Binaries: https://github.com/interference-security/kali-windows-binaries
 
+#### Exploit testado e funcionando em:
+```
+C:\Windows\system32>systeminfo
+
+Host Name:                 AN4KEIN-PC
+OS Name:                   Microsoft Windows 7 Professional
+OS Version:                6.1.7601 Service Pack 1 Build 7601
+```
+
 ### 1 - Interagindo com o axp202001
 
 Primeiro tentei entender como funciona o programa, logo observei quando abri o mesmo com o Immunnity Debugger que ele abria a porta 4321.

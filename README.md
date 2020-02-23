@@ -218,3 +218,10 @@ Vamos adicionar um BreakPoint e ver se estamos alcancando o endereco no qual esc
 
 ![breakpoint](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/18-breakpoint.png)
 
+Portanto o endereco utilizado anteriormente nao funcionou devido suas permissoes, no entanto apos mudar conseguimos obter exito.
+
+`4120147B >>> "\x7B\x14\20\41"`
+
+Breakpoint alcancado:
+
+![break](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/19-breakpoint.png)

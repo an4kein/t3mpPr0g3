@@ -2,7 +2,7 @@
 
 ### Author: Eduardo Barbosa (An4kein)
 
-Download software: https://onedrive.live.com/?authkey=%21AOsBPm%2DgVunhDAg&cid=545DAF20AA78D6D3&id=545DAF20AA78D6D3%21884968&parId=545DAF20AA78D6D3%21884967&action=locate
+Download software: https://github.com/an4kein/t3mpPr0g3/blob/master/bin_vuln/axp202001.exe?raw=true
 
 Download Immunity Debugger. : https://debugger.immunityinc.com/ID_register.py
 

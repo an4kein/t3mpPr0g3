@@ -201,7 +201,7 @@ Depois de ter encontrado todos os badchars, eh hora de redirecionar o fluxo de e
 Precisamos encontrar um endereco de retorno, um JMP ESP pois assim na hora da execucao vamos fazer o EIP apontar para nosso ESP onde esta localizado nossa SHELLCODE.
 
 
-Bom, para facilitar nossa vida agora vou usar o mona haha
+Bom, para facilitar nossa vida agora vou usar o mona haha. Voce tbm poderia usar o nasm_shell  do kali ou online (https://defuse.ca/online-x86-assembler.htm#disassembly)
  
  veja como configurar aqui: https://wmsmartt.wordpress.com/2011/11/08/win32-exploitation-with-mona-py-getting-set-up-part-i/
  
@@ -209,3 +209,9 @@ Bom, para facilitar nossa vida agora vou usar o mona haha
 vou usar o ultimo endereco da lista.
 
 ![mona](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/17-mona.png)
+
+Precisamos representar o endereco em hexdecimal em nosso exploit, atualmente ele encontra-se assim `412014C5` vamos colocar na ordem inversa e representar em hexdecimal.
+
+`412014C5  >>> \xC5\x14\x20\x41`
+
+

@@ -87,6 +87,12 @@ Pronto, adicionamos em nosso exploit!
 
 Agora enviamos novamente para o programa vuln
 
-lembre-se de sempre reiniciar o programa!!!!
+lembre-se de sempre reiniciar o programa!!!! lembre-se execute sempre como ADMINISTRADOR tanto o programa vuln quanto o Immunity
 
 ![restart_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/11-restartprog.png)
+
+Encontrando nosso offset
+
+![find_offset](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/12-offset.png)
+
+Neste caso o offset eh 156

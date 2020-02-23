@@ -73,3 +73,10 @@ s.close()
 
 ### 2 - Controlando o EIP
 
+Precisamos encontrar nosso offset, e assim poder escrever nossos B's no  EIP, portanto nao usarei o famoso (pattern_create) default do kali, pois estou usando o Qubes-OS e ainda nao terminei de deixar liso meu kali, pois so estava conseguindo rodar via LiveCD e no entanto preciso salvar varias coisas e isso estava me dando muito trampo, entao hoje resolvi configurar o Kali em cima do debian10, logo nao terminei de configurar como eu quero. 
+
+Entao, vou usar uma plataforma online para gerar meu pattern
+
+LINK: https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html
+
+![pattern_online](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/9-pattern_online.png)

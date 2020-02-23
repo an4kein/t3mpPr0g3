@@ -86,3 +86,7 @@ Pronto, adicionamos em nosso exploit!
 ![pattern_send](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/10-pattern_send.png)
 
 Agora enviamos novamente para o programa vuln
+
+lembre-se de sempre reiniciar o programa!!!!
+
+![restart_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/11-restartprog.png)

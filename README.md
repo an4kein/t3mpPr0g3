@@ -93,6 +93,6 @@ lembre-se de sempre reiniciar o programa!!!! lembre-se execute sempre como ADMIN
 
 Encontrando nosso offset
 
-![find_offset](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/12-offset.png)
+![find_offset](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/12-offset--.png)
 
 Neste caso o offset eh 156.

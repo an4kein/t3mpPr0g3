@@ -8,6 +8,8 @@ Download Immunity Debugger. : https://debugger.immunityinc.com/ID_register.py
 
 Dwonload Windows-Binaries: https://github.com/interference-security/kali-windows-binaries
 
+Disable DEP and ASLR on Windows 7: https://311hrs.wordpress.com/2019/05/26/disable-dep-aslr-on-windows-7/
+
 #### Exploit testado e funcionando em:
 ```
 C:\Windows\system32>systeminfo

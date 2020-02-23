@@ -179,3 +179,14 @@ s.close()
 
 
 Precisamos encontrar os BADCHARS, para nao ter problemas futuros em nossa shellcode.
+
+Adicionamos nossa lista de badchars em nosso exploit.
+
+lista utilizada: https://raw.githubusercontent.com/mrinalpande/scripts/master/python/badchars
+
+![badchars_list](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/15-badchars.png)
+
+Foi removido inicialmente o \x00 null
+
+Depois de adicionado em nosso exploit, enviamos novamente nosso payload. Poderiamos usar o mona e agilizar nosso tempo, mas irei fazer manualmente.
+

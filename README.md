@@ -23,7 +23,7 @@ Primeiro tentei entender como funciona o programa, logo observei quando abri o m
 
 ![initi_port](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/init_port.png)
 
-tambem pode ser passado qualquer outra porta, isso fica a seu criterio...
+Também pode ser passado qualquer outra porta, isso fica a seu critério...
 
 ![otherport](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/other_port.png)
 
@@ -31,33 +31,33 @@ Uma outra maneira era fazer um fuzer de portas, ate encontrar a porta na qual el
 
 Continuando...
 
-Inicialmente enviei um (A) e o programa me retornava (COMPLETE), mandei outras informacoes de teste, sempre aumentando a quantidade de caracteres enviado.
+Inicialmente enviei um (A) e o programa me retornava (COMPLETE), mandei outras informações de teste, sempre aumentando a quantidade de caracteres enviado.
 
 ![interagindo](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/2-interagindo.png)
 
-Precisamos analisar melhor, nesse momento entrar o famoso (Immunity Debugger) atraves dele vamos debugar com mais detalhes, pois comecaremos agora o fuzzer, ate encontrar o momento em que o "PROGRAMA CRASHA"
+Precisamos analisar melhor, nesse momento entrar o famoso (Immunity Debugger) através dele vamos debugar com mais detalhes, pois começaremos agora o fuzzer, ate encontrar o momento em que o "PROGRAMA CRASHA"
 
 Abre seu Immunity Debugger em seguida abra o axp202001 e de play nele.
 
 ![open_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/3-openprog.png)
 
-Observe que ele encontra-se pausado, precisamos dar play.
+Observe que ele encontra-se pausado, precisamos da play.
 
 ![play_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/4-play_prog.png)
 
-Apos dar o play, uma janela eh aberta informando que esta tudo ok e podemos comecar a brincadeira.
+Apos dar o play, uma janela eh aberta informando que esta tudo ok e podemos começar a brincadeira. 
 
 ![executando](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/5-executando.png)
 
-Vamos enviar determinadas quantidades de bytes (caracteres) ate o programa crashar, observe que foi estabelecida a conecao.
+Vamos enviar determinadas quantidades de bytes (caracteres) até o programa crashar, observe que foi estabelecida a conexão.
 
 ![connect](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/6-connect.png)
 
-Interessante que enviei apenas um (A) e o programa ja dava chash, no exemplo a seguir enviei (an4kein). 
+Interessante que enviei apenas um (A) e o programa já dava chash, no exemplo a seguir enviei (an4kein). 
 
 ![crash_1](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/7-crash-1.png)
 
-Uma vez um colega meu falou, envia 5000k de bytes inicialmente..... Ahhh, entao vamos fazer isso!!! haha.. Antes eu particulamente fazia o fuzzer, mas neste caso vou dar preferencia e seguir a dica do meu mano.
+Uma vez um colega meu falou, envia 5000k de bytes inicialmente. Ahhh, então vamos fazer isso! haha.. Antes eu particularmente fazia o fuzzer, mas neste caso vou dar preferência e seguir a dica do meu mano.
 
 ![crash_2](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/8-crash-2.png)
 
@@ -65,7 +65,6 @@ Nosso code encontra-se na base inicial de interatividade com o programa
 
 ```
 import socket
-import struct
 
 server = '127.0.0.1'
 port = 4321
@@ -82,9 +81,9 @@ s.close()
 
 ### 2 - Controlando o EIP
 
-Precisamos encontrar nosso offset, e assim poder escrever nossos B's no  EIP, portanto nao usarei o famoso (pattern_create) default do kali, pois estou usando o Qubes-OS e ainda nao terminei de deixar liso meu kali, pois so estava conseguindo rodar via LiveCD e no entanto preciso salvar varias coisas e isso estava me dando muito trampo, entao hoje resolvi configurar o Kali em cima do debian10, logo nao terminei de configurar como eu quero. 
+Precisamos encontrar nosso offset, e assim poder escrever nossos B's no  EIP, portanto não usarei o famoso (pattern_create) default do kali, pois estou usando o Qubes-OS e ainda não terminei de deixar liso meu kali, pois só estava conseguindo rodar via LiveCD e no entanto preciso salvar várias coisas e isso estava dando muito trampo, então hoje resolvi configurar o Kali em cima do debian10, logo não terminei de configurar como eu quero. 
 
-Entao, vou usar uma plataforma online para gerar meu pattern
+Então, vou usar uma plataforma online para gerar meu pattern
 
 LINK: https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html
 
@@ -96,7 +95,7 @@ Pronto, adicionamos em nosso exploit!
 
 Agora enviamos novamente para o programa vuln
 
-lembre-se de sempre reiniciar o programa!!!! lembre-se execute sempre como ADMINISTRADOR tanto o programa vuln quanto o Immunity
+Lembre-se de sempre reiniciar o programa!!!! Lembre-se execute sempre como ADMINISTRADOR tanto o programa vuln quanto o Immunity
 
 ![restart_prog](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/11-restartprog.png)
 
@@ -114,7 +113,6 @@ CODE:
 
 ```
 import socket
-import struct
 
 server = '127.0.0.1'
 port = 1337
@@ -142,7 +140,7 @@ s.send(payload)
 s.close()
 ```
 
-Agora precisamos encontrar espaco para nossa SHELLCODE, atualmente colocamos no ESP 100 C's, vamos tentar aumentar essa quantidade, utilizando o seguinte calculo "C" * (5000 - 154 - 4) 
+Agora precisamos encontrar espaço para nossa SHELLCODE, atualmente colocamos no ESP 100 C's, vamos tentar aumentar essa quantidade, utilizando o seguinte calculo "C" * (5000 - 154 - 4) 
 
 ```
 -- 5000 <<<< ----- NOSSO CRASH INICIAL
@@ -150,7 +148,7 @@ Agora precisamos encontrar espaco para nossa SHELLCODE, atualmente colocamos no 
 -- 4    <<<< ----- EQUIVALENTE OS B's
 ```
 
-Bom, veja que agora temos bastante espaco para nossa shellcode. 
+Bom, veja que agora temos bastante espaço para nossa shellcode. 
 
 ![space_shellcode](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/14-space_shellcode.png)
 
@@ -187,11 +185,11 @@ s.close()
 ```
 
 
-Precisamos encontrar os BADCHARS, para nao ter problemas futuros em nossa shellcode.
+Precisamos encontrar os BADCHARS, para não ter problemas futuros em nossa shellcode.
 
 Adicionamos nossa lista de badchars em nosso exploit.
 
-lista utilizada: https://raw.githubusercontent.com/mrinalpande/scripts/master/python/badchars
+Lista utilizada: https://raw.githubusercontent.com/mrinalpande/scripts/master/python/badchars
 
 ![badchars_list](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/15-badchars.png)
 
@@ -205,33 +203,33 @@ Se quiser aprender um pouco mais de como fazer manualmente, veja esse video: htt
 
 Badchars encontrados: \x00\x05\x06\x0a\x0d\x21\x22\x23\x24\xc5\xe3\xe4
 
-Depois de ter encontrado todos os badchars, eh hora de redirecionar o fluxo de execucao.
+Depois de ter encontrado todos os badchars, eh hora de redirecionar o fluxo de execução.
 
-Precisamos encontrar um endereco de retorno, um JMP ESP pois assim na hora da execucao vamos fazer o EIP apontar para nosso ESP onde esta localizado nossa SHELLCODE.
+Precisamos encontrar um endereço de retorno, um JMP ESP pois assim na hora da execução vamos fazer o EIP apontar para nosso ESP onde esta localizado nossa SHELLCODE.
 
 
-Bom, para facilitar nossa vida agora vou usar o mona haha. Voce tbm poderia usar o nasm_shell  do kali ou online (https://defuse.ca/online-x86-assembler.htm#disassembly)
+Bom, para facilitar nossa vida agora vou usar o mona haha. Você tbm poderia usar o nasm_shell  do kali ou online (https://defuse.ca/online-x86-assembler.htm#disassembly)
  
- veja como configurar aqui: https://wmsmartt.wordpress.com/2011/11/08/win32-exploitation-with-mona-py-getting-set-up-part-i/
+ Veja como configurar aqui: https://wmsmartt.wordpress.com/2011/11/08/win32-exploitation-with-mona-py-getting-set-up-part-i/
  
- entao executamos o seguinte comando para procurar `!mona jmp -r esp`, foi encontrado no totol 9 
-vou usar o ultimo endereco da lista.
+ Então executamos o seguinte comando para procurar `!mona jmp -r esp`, foi encontrado no total 9 
+Vou usar o último endereço da lista.
 
 ![mona](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/17-mona.png)
 
-Precisamos representar o endereco em hexdecimal em nosso exploit, atualmente ele encontra-se assim `412014C5` vamos colocar na ordem inversa e representar em hexdecimal.
+Precisamos representar o endereço em hexdecimal em nosso exploit, atualmente ele encontra-se assim `412014C5` vamos colocar na ordem inversa e representar em hexdecimal.
 
 `412014C5  >>> \xC5\x14\x20\x41`
 
-Vamos adicionar um BreakPoint e ver se estamos alcancando o endereco no qual escolhemos:
+Vamos adicionar um BreakPoint e ver se estamos alcançando o endereço no qual escolhemos:
 
 ![breakpoint](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/18-breakpoint.png)
 
-Portanto o endereco utilizado anteriormente nao funcionou devido suas permissoes, no entanto apos mudar conseguimos obter exito.
+Portanto o endereço utilizado anteriormente não funcionou devido suas permissões, no entanto apos mudar conseguimos obter êxito.
 
 `4120147B >>> "\x7B\x14\20\41"`
 
-Breakpoint alcancado:
+Breakpoint alcançado:
 
 ![break](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/19-breakpoint.png)
 

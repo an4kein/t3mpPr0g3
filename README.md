@@ -2,7 +2,7 @@
 
 ### Author: Eduardo Barbosa (An4kein)
 
-Download software: https://github.com/an4kein/t3mpPr0g3/blob/master/bin_vuln/axp202001.exe?raw=true
+Download Software and DLL: https://github.com/an4kein/t3mpPr0g3/tree/master/bin_vuln
 
 Download Immunity Debugger. : https://debugger.immunityinc.com/ID_register.py
 

@@ -339,7 +339,6 @@ Download Exploit: https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/exp
 
 ```
 import socket
-import struct
 
 server = '127.0.0.1'
 port = 1337

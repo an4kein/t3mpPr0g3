@@ -201,4 +201,11 @@ Depois de ter encontrado todos os badchars, eh hora de redirecionar o fluxo de e
 Precisamos encontrar um endereco de retorno, um JMP ESP pois assim na hora da execucao vamos fazer o EIP apontar para nosso ESP onde esta localizado nossa SHELLCODE.
 
 
+Bom, para facilitar nossa vida agora vou usar o mona haha
+ 
+ veja como configurar aqui: https://wmsmartt.wordpress.com/2011/11/08/win32-exploitation-with-mona-py-getting-set-up-part-i/
+ 
+ entao executamos o seguinte comando para procurar `!mona jmp -r esp`, foi encontrado no totol 9 
+vou usar o ultimo endereco da lista.
 
+![mona](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/17-mona.png)

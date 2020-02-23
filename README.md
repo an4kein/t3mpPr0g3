@@ -190,3 +190,4 @@ Foi removido inicialmente o \x00 null
 
 Depois de adicionado em nosso exploit, enviamos novamente nosso payload. Poderiamos usar o mona e agilizar nosso tempo, mas irei fazer manualmente.
 
+![followindump](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/16-followindump.png)

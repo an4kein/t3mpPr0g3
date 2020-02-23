@@ -80,3 +80,9 @@ Entao, vou usar uma plataforma online para gerar meu pattern
 LINK: https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html
 
 ![pattern_online](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/9-pattern_online.png)
+
+Pronto, adicionamos em nosso exploit!
+
+![pattern_send](https://raw.githubusercontent.com/an4kein/t3mpPr0g3/master/images/10-pattern_send.png)
+
+Agora enviamos novamente para o programa vuln
